@@ -108,6 +108,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.getElementById("startScan").disabled = false;
+
+  document.getElementById("startScan").addEventListener("click", function () {
+    this.textContent = "CLICKED";   // Change button text
+    this.style.backgroundColor = "darkgreen"; // Optional: change color on click
+  });
+
 function setupInitialState() {
     // Disable all controls initially
     disableAllControls();
